@@ -5,8 +5,6 @@ import React, { useState } from 'react';
 // navigation
 import { NativeStackScreenProps } from "@react-navigation/native-stack"
 import { RootStackParamList } from '../../App'
-import { Link } from '@react-navigation/native';
-import SignUp from './SignUp';
 
 type LoginProps = NativeStackScreenProps<RootStackParamList, 'Login'>
 
@@ -14,7 +12,6 @@ type LoginProps = NativeStackScreenProps<RootStackParamList, 'Login'>
 export default function Login({ navigation }: LoginProps) {
 
     const [text, setText] = useState('');
-    const [password, setPassword] = useState('');
 
     return (
         <ScrollView style={styles.container}>
@@ -57,10 +54,12 @@ export default function Login({ navigation }: LoginProps) {
                 >Sign In</Text>
             </TouchableOpacity>
             
-            <TouchableOpacity style={styles.singUpTxt}
-            onPress={() => navigation.navigate("Welcome")}
+            <View>
+            <TouchableOpacity 
+            onPress={() => navigation.navigate("SignUp")}
             ><Text style={styles.SignUpLink}>Sign Up</Text></TouchableOpacity>
             <Text style={styles.singUpTxt}>Don’t have an account?</Text>
+            </View>
         </ScrollView>
     )
 }
@@ -149,17 +148,19 @@ const styles = StyleSheet.create({
     },
 
     singUpTxt:{
-        marginTop:70,
+        marginTop:120,
         color:"#FFFFFF",
         left:70,
+        
+        width:165
+        
     },
 
     SignUpLink:{
         color:"#FFD482",
         textDecorationLine: "underline",
-        position:"absolute",
-        left:165,
-        top:69
+        left:235,
+        top:140
 
     }
 

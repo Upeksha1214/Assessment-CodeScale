@@ -50,7 +50,7 @@ function App(): JSX.Element {
           name='SignUp'
           component={SignUp}
           options={{
-            title: "Sign Up User"
+          title: "Sign Up User"
           }}
         />
 
