@@ -87,7 +87,7 @@ export default function SignUp({ navigation }: SignUpProps) {
         // onPress={() => navigation.navigate("Welcome")} 
         >
           <Text style={styles.buttonText}
-          >Sign In</Text>
+          >Sign Up</Text>
         </TouchableOpacity>
       </View>
 
@@ -202,7 +202,7 @@ const styles = StyleSheet.create({
     lineHeight: 29.5,
     letterSpacing: 0,
     textAlign: "center",
-    color: "#FFFFFF",
+    color: "#000000",
 
   },
 

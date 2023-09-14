@@ -70,6 +70,7 @@ const styles = StyleSheet.create({
     container: {
         flex: 1,
         backgroundColor: "#2A2A2A",
+        
     },
     myAppText: {
         fontFamily: "Inter",
@@ -145,7 +146,7 @@ const styles = StyleSheet.create({
         lineHeight: 29.5,
         letterSpacing: 0,
         textAlign: "center",
-        color: "#FFFFFF",
+        color: "#000000",
 
     },
 
