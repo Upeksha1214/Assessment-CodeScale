@@ -10,20 +10,13 @@ type WelcomeProps = NativeStackScreenProps<RootStackParamList, 'Welcome'>
 
 export default function Welcome({navigation}:WelcomeProps) {
   return (
-    <ScrollView >
+    <ScrollView style={styles.container}>
+
       <View style={styles.container}>
         <Text style={styles.smallText}>Home Screen</Text>
-        <Button
-          title='Go to details'
-          // onPress={() => navigation.navigate("Details", {
-          //   productId: "86"
-          // })}
-
-          onPress={() => navigation.navigate("SignUp")}
-
-
-
-        />
+      </View>
+      <View>
+        
       </View>
     </ScrollView>
   )
@@ -33,8 +26,7 @@ const styles = StyleSheet.create({
 
   container: {
     flex: 1,
-    alignItems: "center",
-    justifyContent: "center"
+    backgroundColor:"#2A2A2A"
   },
   smallText: {
     color: "#000000"

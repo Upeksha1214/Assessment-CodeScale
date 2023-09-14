@@ -40,34 +40,33 @@ function App(): JSX.Element {
 
   return (
     <NavigationContainer>
-      <Stack.Navigator initialRouteName='Login'>
+      <Stack.Navigator
+      screenOptions={{
+        headerTintColor: '#2A2A2A',
+        headerStyle: { backgroundColor: '#2A2A2A' },  
+      }}>
         <Stack.Screen
           name='Login'
           component={Login}
+          
         />
 
         <Stack.Screen
           name='SignUp'
           component={SignUp}
-          options={{
-          title: "Sign Up User"
-          }}
+          
         />
 
         <Stack.Screen
           name='Welcome'
           component={Welcome}
-          options={{
-            title: "Welcome to user"
-          }}
+          
         />
 
         <Stack.Screen
           name='Profile'
           component={Profile}
-          options={{
-            title: "User Profile"
-          }}
+          
         />
 
       </Stack.Navigator>

@@ -6,7 +6,7 @@ import React, { useState } from 'react';
 import { NativeStackScreenProps } from "@react-navigation/native-stack"
 import { RootStackParamList } from '../../App'
 
-type LoginProps = NativeStackScreenProps<RootStackParamList, 'Login'>
+type LoginProps = NativeStackScreenProps<RootStackParamList>
 
 
 export default function Login({ navigation }: LoginProps) {
@@ -60,6 +60,8 @@ export default function Login({ navigation }: LoginProps) {
             ><Text style={styles.SignUpLink}>Sign Up</Text></TouchableOpacity>
             <Text style={styles.singUpTxt}>Don’t have an account?</Text>
             </View>
+
+            
         </ScrollView>
     )
 }
