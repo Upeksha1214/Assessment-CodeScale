@@ -52,7 +52,7 @@ export default function Profile({ navigation }: ProfileProps) {
       </View>
 
       <TouchableOpacity
-        onPress={() => navigation.navigate("Welcome")}
+        onPress={() => navigation.navigate("Login")}
         style={styles.button}
       // onPress={() => navigation.navigate("Welcome")} 
       >
