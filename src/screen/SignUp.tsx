@@ -94,7 +94,7 @@ export default function SignUp({ navigation }: SignUpProps) {
       <View>
         <TouchableOpacity
           onPress={() => navigation.navigate("Login")}
-        ><Text style={styles.SignUpLink}>Sign Up</Text></TouchableOpacity>
+        ><Text style={styles.SignUpLink}>Sign in</Text></TouchableOpacity>
         <Text style={styles.singUpTxt}>Don’t have an account?</Text>
       </View>
     </ScrollView>
