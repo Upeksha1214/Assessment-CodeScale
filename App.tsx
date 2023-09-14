@@ -44,9 +44,6 @@ function App(): JSX.Element {
         <Stack.Screen
           name='Login'
           component={Login}
-          options={{
-            title: "Log in User"
-          }}
         />
 
         <Stack.Screen
